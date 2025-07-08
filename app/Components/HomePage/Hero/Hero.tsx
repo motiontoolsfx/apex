@@ -54,24 +54,29 @@ export default function Hero() {
                             <h3>LIMITED TIME OFFER!!!</h3>
                         </div>
                         <div>
-                            <p>First come first serve I currently have limited aviblity.</p>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            A custom-built automation tool tailored to your workflow.
                         </div>
                         <div>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
-                            </div>A custom-built automation tool tailored to your workflow</div>
+                            </div>
+                            No risk — I’ll build your tool at zero upfront cost.
+                        </div>
                         <div>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
-                            </div>No RISK - I will build your tool at zero upfront cost to you.</div>
+                            </div>
+                            $200 guarantee — if it doesn’t save you time, I’ll send you $200, no questions asked.
+                        </div>
                         <div>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
-                            </div>$200 guarantee — if it doesn’t save you time, I’ll send you $200, no questions asked</div>
-                        <div>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>Delivery ussal isi aournd </div>
+                            </div>
+                            Typical delivery is within a few days.
+                        </div>
                     </div>
                     <div className={styles.contact}>
                         {/* <input placeholder='Name' className='text-input'></input>
