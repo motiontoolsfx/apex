@@ -53,29 +53,23 @@ export default function Hero() {
                             <ClockIcon />
                             <h3>LIMITED TIME OFFER!!!</h3>
                         </div>
-                        <div>
+                        <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            A custom-built automation tool tailored to your workflow.
+                            Custom automation tool for your workflow
                         </div>
-                        <div>
+                        <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
                             No risk — I’ll build your tool at zero upfront cost.
                         </div>
-                        <div>
+                        <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            $200 guarantee — if it doesn’t save you time, I’ll send you $200, no questions asked.
-                        </div>
-                        <div>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            Typical delivery is within a few days.
+                            I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.
                         </div>
                     </div>
                     <div className={styles.contact}>

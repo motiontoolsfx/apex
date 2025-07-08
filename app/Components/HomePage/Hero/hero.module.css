@@ -162,7 +162,7 @@
     z-index: -1;
 }
 
-.offerCard div {
+.offerList {
     display: flex;
     gap: 0.5rem;
     text-align: left;
