@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <InfoBar />
+        {/* <InfoBar /> */}
         <Header />
         <div className='backgroundImage'></div>
         {children}
