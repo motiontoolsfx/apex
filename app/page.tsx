@@ -11,7 +11,7 @@ import Benifits from "./Components/Benifits/Benifits";
 export default function Home() {
   return (
     <>
-      {/* <Bubble /> */}
+      <Bubble />
       <Hero />
       <Testimonials />
       <Benifits />

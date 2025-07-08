@@ -17,3 +17,16 @@
 .bar svg {
     width: 1rem;
 }
+
+.mobileText {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobileText {
+        display: block;
+    }
+    .desktopText {
+        display: none;
+    }
+}

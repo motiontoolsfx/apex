@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from './header.module.css'
 import { usePathname, useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { Bars3Icon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const links = [
     { href: '/', label: 'HOME' },
@@ -58,7 +58,8 @@ export default function Header() {
                     <Image src={'/logo.svg'} width={32} height={32} alt='Logo' />
                     Apex Automations
                 </Link>
-                <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><Bars3Icon /></button>
+                {menu ? <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><Bars3Icon /></button> :
+                    <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><XMarkIcon /></button>}
                 <ul className={`${styles.links} ${menu ? styles.menu : ''}`}>
                     {links.map(({ href, label }) => (
                         <li key={href}>

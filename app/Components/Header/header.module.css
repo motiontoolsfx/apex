@@ -135,10 +135,17 @@
 
     .links {
         position: absolute;
-        right: 1rem;
+        left: 50%;
+        transform: translate(-50%, 0);
         top: 4rem;
         flex-direction: column;
         background-color: rgb(var(--background));
         padding: 2rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .links li {
+        width: max-content;
     }
 }

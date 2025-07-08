@@ -7,7 +7,7 @@ export default function Bubble() {
     ];
 
     return (
-        <>
+        <div className={styles.bubbles}>
             {bubbles.map((style, i) => (
                 <div
                     key={i}
@@ -15,6 +15,6 @@ export default function Bubble() {
                     style={{ position: 'absolute', ...style }}
                 />
             ))}
-        </>
+        </div>
     );
 }

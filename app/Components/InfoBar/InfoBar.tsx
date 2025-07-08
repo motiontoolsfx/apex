@@ -6,8 +6,8 @@ export default function InfoBar() {
     return (
         <div className={styles.bar}>
             <ClockIcon />
-            <p>Limited spots available — Contact me to get started</p>
-            {/* <p>Hurry — only <b>3</b> spots left! - Contact me for free support</p> */}
+            <p className={styles.mobileText}>Limited spots — Contact me</p>
+            <p className={styles.desktopText}>Hurry — only <b>3</b> spots left! - Contact me to get started</p>
         </div >
     )
 }
