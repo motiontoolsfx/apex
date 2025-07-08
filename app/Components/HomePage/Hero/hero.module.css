@@ -4,6 +4,9 @@
     gap: 2rem;
     margin-top: 8rem;
     margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text {
@@ -16,7 +19,18 @@
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -0.03rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 900;
+        letter-spacing: -0.03rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .subTitle {
@@ -151,5 +165,6 @@
 .offerCard div {
     display: flex;
     gap: 0.5rem;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
 }
