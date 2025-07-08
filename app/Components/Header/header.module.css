@@ -86,18 +86,59 @@
 }
 
 .links li a::before {
-    
+
     transform-origin: 50% 50%;
     background: rgb(var(--text-color));
 }
 
 .activeLink::before {
-  animation: scaleUp var(--transition-m) forwards;
-  animation-delay: 0.25s;
+    animation: scaleUp var(--transition-m) forwards;
+    animation-delay: 0.25s;
 }
 
 @keyframes scaleUp {
-  to {
-    transform: scale3d(1, 1, 1);
-  }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.hamburgerIcon {
+    all: unset;
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.hamburgerIcon svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .contactBtn {
+        display: none;
+    }
+
+    .hamburgerIcon {
+        display: block;
+    }
+
+    .contents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links {
+        position: absolute;
+        right: 1rem;
+        top: 4rem;
+        flex-direction: column;
+        background-color: rgb(var(--background));
+        padding: 2rem;
+    }
 }

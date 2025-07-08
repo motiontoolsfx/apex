@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from './header.module.css'
 import { usePathname, useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const links = [
     { href: '/', label: 'HOME' },
@@ -14,6 +15,7 @@ const links = [
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
     const [mounted, setMounted] = useState(false)
+    const [menu, setMenu] = useState(false)
     const pathname = usePathname()
     const router = useRouter()
 
@@ -56,7 +58,8 @@ export default function Header() {
                     <Image src={'/logo.svg'} width={32} height={32} alt='Logo' />
                     Apex Automations
                 </Link>
-                <ul className={styles.links}>
+                <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><Bars3Icon /></button>
+                <ul className={`${styles.links} ${menu ? styles.menu : ''}`}>
                     {links.map(({ href, label }) => (
                         <li key={href}>
                             <Link href={href} className={pathname === href ? styles.activeLink : ''}>
