@@ -1,0 +1,19 @@
+.bar {
+    background: rgb(var(--text-color));
+    color: rgb(var(--background));
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.bar svg {
+    width: 1rem;
+}

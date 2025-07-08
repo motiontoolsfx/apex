@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.text {
+    color: rgba(var(--text-color), 0.75);
+}
+
+.boldText {
+    color: rgba(var(--text-color), 1);
+    font-weight: bold;
+}
+
+.highlightedText {
+    background: rgba(255, 215, 0, 0.4);
+}

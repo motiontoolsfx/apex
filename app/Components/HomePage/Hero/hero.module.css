@@ -1,0 +1,155 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.text {
+    /* border-left: 4px solid rgb(var(--text-color)); */
+    /* padding: 0.25rem 2rem; */
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.03rem;
+    margin-bottom: 1rem;
+}
+
+.subTitle {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 0.5rem;
+    opacity: 0.65;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contactBtns {
+    display: flex;
+    gap: 1rem;
+}
+
+.contactBtns button {
+    width: 100%;
+    max-width: 500px;
+    height: 3rem;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(var(--text-color), 0.15);
+    width: max-content;
+    padding: 0 2rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius);
+}
+
+.caption svg {
+    width: 1.5rem;
+    color: #ff7300;
+}
+
+.perspective {
+    perspective: 2000px;
+}
+
+.graphic {
+    transform-style: preserve-3d;
+    transform: rotateX(-5deg) rotateY(-5deg);
+}
+
+.offerCard {
+    outline-width: 1px;
+    outline-offset: 0;
+    outline-color: rgba(var(--primary-accent), 1);
+    outline-style: solid;
+    animation: animateOutline 2s ease infinite;
+}
+
+@keyframes animateOutline {
+    0% {
+        outline-width: 1px;
+        outline-offset: 0;
+        outline-color: rgba(var(--primary-accent), 0);
+    }
+
+    10% {
+        outline-color: rgba(var(--primary-accent), 0.75);
+    }
+
+    100% {
+        outline-width: 10px;
+        outline-color: rgba(var(--primary-accent), 0);
+    }
+}
+
+.offerCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(100px) brightness(1.5) saturate(1.4) contrast(1) drop-shadow(var(--drop-shadow));
+    border-color: rgb(var(--primary-accent));
+}
+
+.offerHeader {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerHeader h3 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.offerHeader svg {
+    width: 1.5rem;
+}
+
+.offerCardIcon {
+    position: relative;
+}
+
+.offerCardIcon svg {
+    width: 1.5rem;
+    color: rgb(var(--success-color));
+}
+
+.offerCardIcon::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(var(--text-color));
+    z-index: -1;
+}
+
+.offerCard div {
+    display: flex;
+    gap: 0.5rem;
+    text-align: center;
+}

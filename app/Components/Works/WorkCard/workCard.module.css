@@ -1,0 +1,41 @@
+.projectCard {
+    color: rgb(var(--text-color));
+}
+
+.img {
+    border-radius: var(--border-radius);
+    width: 100%;
+    overflow: hidden;
+}
+
+.img img {
+    display: block;
+    width: 100%;
+    transition: transform var(--transition-m);
+}
+
+.projectCard:hover > .img img {
+    transform: scale(1.02);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 0.5rem;
+    opacity: 0.65;
+    margin: 1rem 0;
+}
+
+.description {
+    opacity: 0.85;
+}
+
+.title {
+    margin-bottom: .5rem;
+}
+
+/* .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+} */

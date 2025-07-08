@@ -1,0 +1,22 @@
+.dark {
+    backdrop-filter: blur(100px) brightness(0.8) saturate(0.8) contrast(1) drop-shadow(var(--drop-shadow));
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.grid li h3 {
+    margin-bottom: 0.5rem;
+}
+
+.grid li p {
+    opacity: 0.85;
+}
+
+.grid li svg {
+    width: 3rem;
+    margin-bottom: 1rem;
+}

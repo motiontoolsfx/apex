@@ -1,0 +1,101 @@
+:root {
+  --background: 5, 5, 15;
+  --primary-accent: 59, 130, 246;
+  --secondary-accent: 212, 10, 40;
+  --text-color: 241, 245, 249;
+  --border-color: 75, 85, 99;
+
+  --error-color: 239, 68, 68;
+  --success-color: 34, 197, 94;
+  --warning-color: 234, 179, 8;
+
+  --border-radius: 0.5rem;
+
+  --transition-s: 200ms ease;
+  --transition-m: 500ms ease;
+  --transition-l: 1000ms ease;
+
+  --drop-shadow: 0 4px 6px rgba(41, 33, 33, 0.3);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--text-color));
+  background: rgb(var(--background));
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.page-width {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card {
+  border: 1px solid rgb(var(--border-color));
+  backdrop-filter: blur(100px) brightness(0.8) saturate(0.8) contrast(1) drop-shadow(var(--drop-shadow));
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.hoverable-card {
+  transition: border-color var(--transition-m), backdrop-filter var(--transition-m);
+}
+
+.hoverable-card:hover {
+  backdrop-filter: blur(100px) brightness(1.5) saturate(1.4) contrast(1) drop-shadow(var(--drop-shadow));
+  border-color: rgb(var(--primary-accent));
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header p {
+  margin: auto;
+  max-width: 800px;
+  opacity: 0.65;
+}
+
+.backgroundImage {
+  opacity: .2;
+  pointer-events: none;
+  background-image: url('https://cdn.prod.website-files.com/67ff0b0bf181b7f06f45091f/680b8ffccf217101e602fa71_noise.png');
+  background-position: 0 0;
+  background-size: 256px;
+  background-attachment: scroll;
+  position: fixed;
+  inset: 0%;
+}

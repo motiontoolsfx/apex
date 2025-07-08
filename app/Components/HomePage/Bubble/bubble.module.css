@@ -1,0 +1,10 @@
+.bubble {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    background: rgb(var(--secondary-accent));
+    z-index: -999;
+    filter: blur(2000px);
+    border-radius: 6000px;
+    opacity: 0.1;
+}
