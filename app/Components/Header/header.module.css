@@ -108,6 +108,7 @@
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    z-index: 999;
 }
 
 .hamburgerIcon svg {
@@ -135,17 +136,47 @@
 
     .links {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 4rem;
+        right: 0;
+        /* transform: translate(-50%, 0); */
+        top: 0;
         flex-direction: column;
-        background-color: rgb(var(--background));
-        padding: 2rem;
-        width: 100%;
-        align-items: center;
+        /* background-color: rgb(var(--background)); */
+        background: linear-gradient(to right, transparent 50%, rgb(var(--background)) 50%);
+        background-size: 200% 100%;
+        animation: slideIn var(--transition-l) forwards;
+        padding: 6rem 2rem;
+        width: 100vw;
+        height: 100vh;
+        align-items: flex-end;
+        justify-content: flex-start;
+        backdrop-filter: brightness(0.2);
     }
 
     .links li {
         width: max-content;
+        opacity: 0;
+        animation: fadeIn var(--transition-l) forwards;
+        animation-delay: 0.3s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        ;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 40% 0;
     }
 }

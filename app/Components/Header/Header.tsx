@@ -15,7 +15,7 @@ const links = [
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
     const [mounted, setMounted] = useState(false)
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(true)
     const pathname = usePathname()
     const router = useRouter()
 
