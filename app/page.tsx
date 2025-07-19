@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Bubble />
       <Hero />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Benifits />
       <Free />
       <About />

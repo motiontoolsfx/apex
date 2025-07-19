@@ -5,6 +5,7 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import styles from './hero.module.css'
 import Link from 'next/link'
 import Video from './Video/Video'
+import ReviewsRibbon from '../../ReviewsRibbon/ReviewsRibbon'
 
 const chips = [
     { text: 'Admin dashboards', icon: ChartBarIcon },
@@ -87,10 +88,11 @@ export default function Hero() {
                                         window.scrollTo({ top: y, behavior: 'smooth' })
                                     }
                                 }}>
-                                Get Started Risk-Free
+                                Get Me Started Risk-Free
                             </button>
                         </div>
                         <div className={styles.caption}><FireIcon /><p>Hurry — only <b>1</b> spot left!</p></div>
+                        <ReviewsRibbon />
                     </div>
                 </div>
                 <div>

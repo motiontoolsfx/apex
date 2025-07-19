@@ -56,7 +56,7 @@ export default function Header() {
             <div className={`page-width ${styles.contents}`}>
                 <Link href="/" className={styles.logo}>
                     <Image src={'/logo.svg'} width={32} height={32} alt='Logo' />
-                    Apex Automations
+                    Clear Automate
                 </Link>
                 {menu ? <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><Bars3Icon /></button> :
                     <button className={styles.hamburgerIcon} onClick={() => { setMenu(!menu) }}><XMarkIcon /></button>}
