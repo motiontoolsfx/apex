@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className={styles.websiteLinks}>
                     <Link href="/" className={styles.logo}>
                         <Image src={'logo.svg'} width={32} height={32} alt='Logo' />
-                        Apex Automations
+                        Clear Automate
                     </Link>
                 </div>
                 <div className={styles.policyLinks}>

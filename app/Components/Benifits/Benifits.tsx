@@ -1,53 +1,59 @@
 import Multicolumn from "../Multicolumn/Multicolumn";
 import {
-    BoltIcon,
-    EyeIcon,
-    PuzzlePieceIcon,
     ClockIcon,
-    ShieldCheckIcon,
     SparklesIcon,
+    ArrowPathIcon,
+    FolderIcon,
+    ChartBarIcon,
+    ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Benefits() {
     const cards = [
         {
-            icon: <BoltIcon />,
-            title: "Instant Efficiency",
-            body: "Slash time spent on tasks with lightning-fast custom automation.",
-        },
-        {
-            icon: <EyeIcon />,
-            title: "Clear Visibility",
-            body: "Gain complete transparency into your operations with real-time visual insights.",
-        },
-        {
-            icon: <PuzzlePieceIcon />,
-            title: "Seamless Integration",
-            body: "Effortlessly connect disparate tools into one unified workflow.",
-        },
-        {
             icon: <ClockIcon />,
-            title: "24/7 Reliability",
-            body: "Automations run nonstop, ensuring consistent productivity around the clock.",
+            title: "Saves Hours Weekly",
+            body: "Automate repetitive workflows so you don’t waste time on manual tasks.",
+            color: 45,        // orange/yellow for time-saving, energy
         },
         {
-            icon: <ShieldCheckIcon />,
-            title: "Data Security",
-            body: "Protect sensitive business information with secure, compliant solutions.",
+            icon: <ChartBarIcon />,
+            title: "Improves Client Experience",
+            body: "Clients get instant updates, reports, or actions without delays.",
+            color: 120,       // blue for trust and professionalism
+        },
+        {
+            icon: <ArrowPathIcon />,
+            title: "Scales Effortlessly",
+            body: "Handles more work without needing to hire or micromanage.",
+            color: 210,       // green for growth and scalability (keep)
+        },
+        {
+            icon: <ExclamationTriangleIcon />,
+            title: "Reduces Errors",
+            body: "No more forgetting steps or misplacing info thanks to structured automations.",
+            color: 0,         // red for warning/errors
         },
         {
             icon: <SparklesIcon />,
-            title: "Tailored Innovation",
-            body: "Unique tools crafted to solve your exact challenges and elevate your workflow.",
+            title: "Adds Smart AI Decisions",
+            body: "AI prioritizes tasks, flags issues, and writes updates based on workflows.",
+            color: 270,       // purple for intelligence and creativity
+        },
+        {
+            icon: <FolderIcon />,
+            title: "Keeps Everything Organized",
+            body: "Automatically sorts and updates tasks, files, and data with no effort.",
+            color: 30,       // blue-gray for organization and calmness
         },
     ];
 
     return (
         <Multicolumn
-            header="Unlock Unique Benefits"
-            subtitle="Innovative solutions designed for your success"
+            header="Clear Benefits That Drive Growth"
+            subtitle="Tailored solutions to save time, cut costs, and grow your business"
             cards={cards}
-            dark={true}
+            dark={false}
         />
     );
 }

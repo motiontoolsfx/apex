@@ -36,7 +36,7 @@ export default function Hero() {
             <div className={styles.layout}>
                 <div className={styles.text}>
                     <h1 className={styles.title}>
-                        Simplify your <span style={{ color: 'rgb(var(--primary-accent))' }}>workflows</span> with <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that remove <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span>.
+                        <span>I build <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that take the <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span> out of <span style={{ color: 'rgb(var(--primary-accent))' }}>manual tasks</span>.</span>
                     </h1>
                     {/* <p className={styles.subTitle}>
                         Transform your spreadsheets, reports, and manual tasks into automated, easy-to-use tools tailored to your business.
@@ -72,26 +72,32 @@ export default function Hero() {
                             </div>
                             I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.
                         </div>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            4 day avrg delivery time meaning you could start using your tool this week.
+                        </div>
+                        <button
+                            className='button-solid'
+                            onClick={() => {
+                                const el = document.getElementById('contact')
+                                if (el) {
+                                    const yOffset = -100
+                                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
+                                    window.scrollTo({ top: y, behavior: 'smooth' })
+                                }
+                            }}>
+                            Get Me Started Risk-Free
+                        </button>
                     </div>
                     <div className={styles.contact}>
                         {/* <input placeholder='Name' className='text-input'></input>
                         <input placeholder='Email' className='text-input'></input> */}
                         <div className={styles.contactBtns}>
                             {/* <button className='button-outline'>Things I've Built</button> */}
-                            <button
-                                className='button-solid'
-                                onClick={() => {
-                                    const el = document.getElementById('contact')
-                                    if (el) {
-                                        const yOffset = -100
-                                        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
-                                        window.scrollTo({ top: y, behavior: 'smooth' })
-                                    }
-                                }}>
-                                Get Me Started Risk-Free
-                            </button>
+
                         </div>
-                        <div className={styles.caption}><FireIcon /><p>Hurry — only <b>1</b> spot left!</p></div>
                         <ReviewsRibbon />
                     </div>
                 </div>

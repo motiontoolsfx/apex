@@ -5,6 +5,7 @@ type Card = {
     icon?: React.ReactNode;
     title: string;
     body: string;
+    color?: number;
 };
 
 type MulticolumnProps = {
@@ -17,16 +18,16 @@ type MulticolumnProps = {
 
 export default function Multicolumn({ header, subtitle, cards, dark }: MulticolumnProps) {
     return (
-        <div className={dark ? `${styles.dark} section` : ''}>
+        <div className={dark ? `${styles.dark} section` : `${styles.light} section`}>
             <div className={'section page-width'}>
                 <div className='section-header'>
                     <h2>{header}</h2>
                     <p>{subtitle}</p>
                 </div>
                 <ul className={styles.grid}>
-                    {cards.map(({ icon, title, body }, i) => (
+                    {cards.map(({ icon, title, body, color }, i) => (
                         <li key={i}>
-                            {icon}
+                            <div className={styles.icon} style={color !== null ? { background: `hsl(${color}, 90%, 85%)`, color: `hsl(${color}, 90%, 20%)` } : {}}>{icon}</div>
                             <h3>{title}</h3>
                             <p>{body}</p>
                         </li>

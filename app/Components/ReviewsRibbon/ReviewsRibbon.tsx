@@ -9,7 +9,7 @@ export default function ReviewsRibbon() {
             (window as any).reviewsBadgeRibbon?.("badge-ribbon", {
                 store: "clearautomate.io",
                 size: "medium",
-                whiteLogo: true,
+                blackLogo: true,
             });
         };
         document.body.appendChild(script);
