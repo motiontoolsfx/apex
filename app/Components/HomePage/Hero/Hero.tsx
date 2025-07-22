@@ -49,7 +49,45 @@ export default function Hero() {
                             </span>
                         ))}
                     </div> */}
-                    <div className={`${styles.offerCard} card`}>
+                    <div className={`${styles.offerCard}`}>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            Custom automation tool for your workflow
+                        </div>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            No risk — I’ll build your tool at zero upfront cost.
+                        </div>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.
+                        </div>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            4 day avrg delivery time meaning you could start using your tool this week.
+                        </div>
+                        <button
+                            className='button-solid'
+                            onClick={() => {
+                                const el = document.getElementById('contact')
+                                if (el) {
+                                    const yOffset = -100
+                                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
+                                    window.scrollTo({ top: y, behavior: 'smooth' })
+                                }
+                            }}>
+                            Get Me Started Risk-Free
+                        </button>
+                    </div>
+                    {/* <div className={`${styles.offerCard} card`}>
                         <div className={styles.offerHeader}>
                             <ClockIcon />
                             <h3>LIMITED TIME OFFER!!!</h3>
@@ -90,7 +128,7 @@ export default function Hero() {
                             }}>
                             Get Me Started Risk-Free
                         </button>
-                    </div>
+                    </div> */}
                     <div className={styles.contact}>
                         {/* <input placeholder='Name' className='text-input'></input>
                         <input placeholder='Email' className='text-input'></input> */}
@@ -98,7 +136,7 @@ export default function Hero() {
                             {/* <button className='button-outline'>Things I've Built</button> */}
 
                         </div>
-                        <ReviewsRibbon />
+                        {/* <ReviewsRibbon /> */}
                     </div>
                 </div>
                 <div>

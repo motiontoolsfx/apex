@@ -7,12 +7,14 @@ import Free from "./Components/HomePage/Free/Free";
 import About from "./Components/HomePage/About/About";
 import Contact from "./Components/Contact/Contact";
 import Benifits from "./Components/Benifits/Benifits";
+import ReviewsCarousel from "./Components/ReviewCarousel/ReviewCarousel";
 
 export default function Home() {
   return (
     <>
       {/* <Bubble /> */}
       <Hero />
+      <ReviewsCarousel />
       {/* <Testimonials /> */}
       <Benifits />
       <Free />

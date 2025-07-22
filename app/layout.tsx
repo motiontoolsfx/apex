@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./styles/globals.css";
 import "./styles/inputs.css"
 import './styles/text.css'
+
 import Header from "./Components/Header/Header";
 import InfoBar from "./Components/InfoBar/InfoBar";
 import Footer from "./Components/Footer/Footer";
@@ -14,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Automations",
+  title: "Clear Automate",
   description: "Automate your workflows",
 };
 
