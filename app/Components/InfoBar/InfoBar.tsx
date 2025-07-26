@@ -7,7 +7,7 @@ export default function InfoBar() {
         <div className={styles.bar}>
             <FireIcon style={{ color: 'orange' }} />
             <p>
-                I have limited availability — only <b>2</b> spot left! Contact me to get started.
+                Limited spots left – Contact now.
             </p>
         </div >
     )

@@ -42,7 +42,7 @@ export default function Page() {
                 <br />
 
                 <p><strong>Contact Us</strong></p>
-                <p>If you have any questions about these terms, please contact us at <a href="mailto:jcarmenini@gmail.com">jcarmenini@gmail.com</a>.</p>
+                <p>If you have any questions about these terms, please contact us at <a href="mailto:joel@clearautomate.io">joel@clearautomate.io</a>.</p>
             </div>
         </div>
     )

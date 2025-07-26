@@ -9,13 +9,22 @@ export default function Page() {
                     <h2>Projects That Drive Business Success</h2>
                     <p>Real-world dashboards and tools designed to streamline workflows and boost performance.</p>
                 </div>
-                <div className={styles.grid}>
+                <div className='grid3'>
                     <WorkCard
                         title="Case Management System"
                         description="Streamlined automated process for submitting, assigning, and managing cases in real time."
+                        client='AFGE'
                         image="website"
                         stack={['Next.js', 'SQL']}
                         id="afge"
+                    />
+                    <WorkCard
+                        title="Automatic Inovice Generator"
+                        description="Streamlined automated process for submitting, assigning, and managing cases in real time."
+                        client='Foundation First'
+                        image="website"
+                        stack={['Python', 'APIs', 'Mail']}
+                        id="ff"
                     />
                     {/* <WorkCard /> */}
                 </div>

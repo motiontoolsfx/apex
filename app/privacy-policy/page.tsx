@@ -38,7 +38,7 @@ export default function Page() {
                 <br />
 
                 <p><strong>Contact Us</strong></p>
-                <p>If you have questions about this policy, please contact us at <Link href="mailto:jcarmenini@gmail.com">jcarmenini@gmail.com</Link>.</p>
+                <p>If you have questions about this policy, please contact us at <Link href="mailto:joel@clearautomate.io">joel@clearautomate.io</Link>.</p>
             </div>
         </div>
     )

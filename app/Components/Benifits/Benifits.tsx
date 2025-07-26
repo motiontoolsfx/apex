@@ -54,6 +54,7 @@ export default function Benefits() {
             subtitle="Tailored solutions to save time, cut costs, and grow your business"
             cards={cards}
             dark={false}
+            button={{ text: "View My Works", href: "./works" }}
         />
     );
 }

@@ -33,7 +33,7 @@ export default function Hero() {
 
     return (
         <div className="page-width">
-            <div className={styles.layout}>
+            <div className={`grid2 ${styles.layout}`}>
                 <div className={styles.text}>
                     <h1 className={styles.title}>
                         <span>I build <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that take the <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span> out of <span style={{ color: 'rgb(var(--primary-accent))' }}>manual tasks</span>.</span>
@@ -50,32 +50,44 @@ export default function Hero() {
                         ))}
                     </div> */}
                     <div className={`${styles.offerCard}`}>
-                        <div className={styles.offerList}>
+                        {/* <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            Custom automation tool for your workflow
+                            <p>Custom automation tool for your workflow</p>
                         </div>
                         <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            No risk — I’ll build your tool at zero upfront cost.
+                            <p>I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.</p>
                         </div>
                         <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.
+                            <p>4 day avrg delivery time meaning you could start using your tool this week.</p>
+                        </div> */}
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            <p>If you don't save 10 hours a week after 7 days, I’ll give your money back — plus $100</p>
                         </div>
                         <div className={styles.offerList}>
                             <div className={styles.offerCardIcon}>
                                 <CheckCircleIcon />
                             </div>
-                            4 day avrg delivery time meaning you could start using your tool this week.
+                            <p>Only 5 spots available — I'm starting small to give each client my full attention</p>
+                        </div>
+                        <div className={styles.offerList}>
+                            <div className={styles.offerCardIcon}>
+                                <CheckCircleIcon />
+                            </div>
+                            <p>Book a free call to see exactly how much time I can save you — no pressure, no commitment</p>
                         </div>
                         <button
-                            className='button-solid'
+                            className={`button-solid ${styles.pulse}`}
                             onClick={() => {
                                 const el = document.getElementById('contact')
                                 if (el) {
@@ -84,8 +96,9 @@ export default function Hero() {
                                     window.scrollTo({ top: y, behavior: 'smooth' })
                                 }
                             }}>
-                            Get Me Started Risk-Free
+                            <p>Get Me Started Risk-Free</p>
                         </button>
+                        {/* <div><p>Hurry! Only 3 Spots Left</p></div> */}
                     </div>
                     {/* <div className={`${styles.offerCard} card`}>
                         <div className={styles.offerHeader}>

@@ -14,6 +14,7 @@ import {
     CommandLineIcon,
     BoltIcon,
     FireIcon,
+    EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 
 const chips = [
@@ -27,6 +28,7 @@ const chips = [
     { text: 'Cloud', icon: CloudIcon },
     { text: 'Supabase', icon: BoltIcon },
     { text: 'Firebase', icon: FireIcon },
+    { text: 'Mail', icon: EnvelopeIcon }
 ] as const;
 
 type ChipText = typeof chips[number]['text'];
@@ -34,12 +36,13 @@ type ChipText = typeof chips[number]['text'];
 type ProjectCardProps = {
     title: string;
     description: string;
+    client: string;
     id: string;
     image?: string;
     stack: ChipText[];
 };
 
-export default function WorkCard({ title, description, image, id, stack }: ProjectCardProps) {
+export default function WorkCard({ title, description, client, image, id, stack }: ProjectCardProps) {
     return (
         <Link href={`/works/${id}`} className={`card hoverable-card ${styles.projectCard}`}>
             <div className={styles.img}>
@@ -58,7 +61,7 @@ export default function WorkCard({ title, description, image, id, stack }: Proje
                 </div>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.description}>{description}</p>
-                <p>Client: AFGE</p>
+                <p>Client: {client}</p>
             </div>
         </Link>
     );

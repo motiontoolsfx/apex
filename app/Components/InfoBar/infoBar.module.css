@@ -11,22 +11,8 @@
     left: 0;
     z-index: 999;
     width: 100vw;
-    font-size: 0.9rem;
 }
 
 .bar svg {
     width: 1rem;
-}
-
-.mobileText {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .mobileText {
-        display: block;
-    }
-    .desktopText {
-        display: none;
-    }
 }

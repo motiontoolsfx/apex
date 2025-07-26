@@ -7,7 +7,7 @@ export default function About() {
             <div className="section-header">
                 <h2>Who am I?</h2>
             </div>
-            <div className={styles.grid}>
+            <div className={`${styles.grid} grid2`}>
                 <img src={'https://img.freepik.com/premium-photo/man-portrait-tablet-with-smile-office-research-networking-stock-market-investment-portfolio-manager-tech-communication-with-clients-proposal-management-corporate-advice_590464-408461.jpg'} />
                 <PulseDot>
                     <p>

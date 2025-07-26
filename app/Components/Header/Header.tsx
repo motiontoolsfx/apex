@@ -69,7 +69,7 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
-                <a href="/#contact" className={styles.contactBtn} onClick={handleContactClick}>
+                <a href="/#contact" className={`button-solid ${styles.contactBtn}`} onClick={handleContactClick}>
                     Get Started Risk-Free
                 </a>
             </div>
