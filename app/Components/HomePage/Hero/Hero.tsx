@@ -30,17 +30,26 @@ const data = [
 ]
 
 export default function Hero() {
+    const offers = [
+        <>
+            If you don't save <span className={styles.boldText}>10 hours a week after 7 days</span>, <span className={styles.highlightedText}>I’ll give your money back — plus $100</span>
+        </>,
+        <>
+            <span className={styles.highlightedText}>Only <span className={styles.boldText}>5 spots</span> available</span> — I'm starting small to give each client my full attention
+        </>,
+        <>
+            <span className={styles.highlightedText}>Book a free call</span> to see exactly how much time I can save you — <span className={styles.boldText}>no pressure, no commitment</span>
+        </>
+    ];
+
 
     return (
         <div className="page-width">
             <div className={`grid2 ${styles.layout}`}>
-                <div className={styles.text}>
+                <div>
                     <h1 className={styles.title}>
                         <span>I build <span style={{ color: 'rgb(var(--primary-accent))' }}>custom tools</span> that take the <span style={{ color: 'rgb(var(--primary-accent))' }}>headaches</span> out of <span style={{ color: 'rgb(var(--primary-accent))' }}>manual tasks</span>.</span>
                     </h1>
-                    {/* <p className={styles.subTitle}>
-                        Transform your spreadsheets, reports, and manual tasks into automated, easy-to-use tools tailored to your business.
-                    </p> */}
                     {/* <div className={styles.chips}>
                         {chips.map(({ text, icon: Icon }) => (
                             <span key={text} className="chip">
@@ -50,42 +59,18 @@ export default function Hero() {
                         ))}
                     </div> */}
                     <div className={`${styles.offerCard}`}>
-                        {/* <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
+                        {offers.map((text, index) => (
+                            <div className={styles.offerList} key={index}>
+                                <div className={styles.offerCardIcon}>
+                                    <CheckCircleIcon />
+                                </div>
+                                <p>
+                                    <span className={styles.offerText}>{text}</span>
+                                </p>
                             </div>
-                            <p>Custom automation tool for your workflow</p>
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            <p>I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.</p>
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            <p>4 day avrg delivery time meaning you could start using your tool this week.</p>
-                        </div> */}
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            <p>If you don't save 10 hours a week after 7 days, I’ll give your money back — plus $100</p>
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            <p>Only 5 spots available — I'm starting small to give each client my full attention</p>
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            <p>Book a free call to see exactly how much time I can save you — no pressure, no commitment</p>
-                        </div>
+                        ))}
+                    </div>
+                    <div className={styles.contact}>
                         <button
                             className={`button-solid ${styles.pulse}`}
                             onClick={() => {
@@ -98,95 +83,11 @@ export default function Hero() {
                             }}>
                             <p>Get Me Started Risk-Free</p>
                         </button>
-                        {/* <div><p>Hurry! Only 3 Spots Left</p></div> */}
-                    </div>
-                    {/* <div className={`${styles.offerCard} card`}>
-                        <div className={styles.offerHeader}>
-                            <ClockIcon />
-                            <h3>LIMITED TIME OFFER!!!</h3>
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            Custom automation tool for your workflow
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            No risk — I’ll build your tool at zero upfront cost.
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            I'll send you $200 guarantee if you feel I've wasted your time. No questions asked.
-                        </div>
-                        <div className={styles.offerList}>
-                            <div className={styles.offerCardIcon}>
-                                <CheckCircleIcon />
-                            </div>
-                            4 day avrg delivery time meaning you could start using your tool this week.
-                        </div>
-                        <button
-                            className='button-solid'
-                            onClick={() => {
-                                const el = document.getElementById('contact')
-                                if (el) {
-                                    const yOffset = -100
-                                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset
-                                    window.scrollTo({ top: y, behavior: 'smooth' })
-                                }
-                            }}>
-                            Get Me Started Risk-Free
-                        </button>
-                    </div> */}
-                    <div className={styles.contact}>
-                        {/* <input placeholder='Name' className='text-input'></input>
-                        <input placeholder='Email' className='text-input'></input> */}
-                        <div className={styles.contactBtns}>
-                            {/* <button className='button-outline'>Things I've Built</button> */}
-
-                        </div>
-                        {/* <ReviewsRibbon /> */}
                     </div>
                 </div>
                 <div>
                     <Video />
                 </div>
-                {/* <div className={styles.perspective}>
-                    <div className={`card ${styles.graphic}`}>
-                        <h3>Customer Lifetime Value (CLV)</h3>
-                        <ResponsiveContainer width="100%" height={300}>
-                            <AreaChart data={data}>
-                                <defs>
-                                    <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stopColor="rgb(var(--primary-accent))" stopOpacity={0.8} />
-                                        <stop offset="100%" stopColor="rgb(var(--primary-accent))" stopOpacity={0} />
-                                    </linearGradient>
-                                </defs>
-                                <XAxis
-                                    dataKey="month"
-                                    axisLine={false}
-                                    tickLine={false}
-                                    tick={false}  // hides the ticks and labels
-                                />
-                                <YAxis axisLine={false} tickLine={false} />
-                                <Tooltip />
-                                <CartesianGrid vertical={false} stroke="rgba(var(--text-color), 0.05)" />
-                                <Area
-                                    type="monotone"
-                                    dataKey="clv"
-                                    stroke="rgb(var(--primary-accent))"
-                                    strokeWidth={2}
-                                    fill="url(#colorGradient)"
-                                    fillOpacity={1}
-                                />
-                            </AreaChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div> */}
             </div>
         </div>
     )
